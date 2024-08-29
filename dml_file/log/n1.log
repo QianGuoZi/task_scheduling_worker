@@ -1,0 +1,407 @@
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.18.0.3:4444/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Aug/2024 06:54:26] "GET /hi HTTP/1.1" 200 -
+222.201.187.50 - - [29/Aug/2024 06:54:46] "POST //conf/dataset HTTP/1.1" 200 -
+222.201.187.50 - - [29/Aug/2024 06:54:46] "POST //conf/structure HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2024 06:54:56] "GET /hi HTTP/1.1" 200 -
+222.201.187.50 - - [29/Aug/2024 06:55:11] "GET //start HTTP/1.1" 200 -
+Aggregate: accuracy=0.13200000023841857, round=0,
+gossip to n3
+172.18.0.1 - - [29/Aug/2024 06:55:12] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8003, cost=0.323000431060791
+Train: loss=0.6718730926513672, round=1,
+Aggregate: accuracy=0.13640105444192888, round=1,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.3165581226348877
+172.18.0.1 - - [29/Aug/2024 06:55:16] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.5984562039375305, round=2,
+Aggregate: accuracy=0.1377730866074562, round=2,
+gossip to n3
+172.18.0.1 - - [29/Aug/2024 06:55:19] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8003, cost=0.32517027854919434
+Train: loss=0.48434963822364807, round=3,
+Aggregate: accuracy=0.24653825759887696, round=3,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.32738280296325684
+172.18.0.1 - - [29/Aug/2024 06:55:24] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:55:24] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.38414132595062256, round=4,
+Aggregate: accuracy=0.5108601565361023, round=4,
+gossip to p1
+127.0.0.1 - - [29/Aug/2024 06:55:26] "GET /hi HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.32570934295654297
+Train: loss=0.3235107958316803, round=5,
+Aggregate: accuracy=0.6062321891784668, round=5,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.32343387603759766
+172.18.0.1 - - [29/Aug/2024 06:55:30] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:55:32] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.29833510518074036, round=6,
+Aggregate: accuracy=0.7589076504707336, round=6,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.3214101791381836
+172.18.0.1 - - [29/Aug/2024 06:55:33] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.29002463817596436, round=7,
+Aggregate: accuracy=0.8290343008041382, round=7,
+gossip to n2
+172.18.0.1 - - [29/Aug/2024 06:55:35] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8002, cost=0.3211226463317871
+172.18.0.1 - - [29/Aug/2024 06:55:36] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.2622954845428467, round=8,
+Aggregate: accuracy=0.891414249420166, round=8,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.31498122215270996
+172.18.0.1 - - [29/Aug/2024 06:55:39] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.22680479288101196, round=9,
+Aggregate: accuracy=0.8787018461227417, round=9,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.32256650924682617
+172.18.0.1 - - [29/Aug/2024 06:55:41] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.22834999859333038, round=10,
+Aggregate: accuracy=0.9044063329696655, round=10,
+gossip to p1
+172.18.0.1 - - [29/Aug/2024 06:55:42] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.32350611686706543
+Train: loss=0.21505329012870789, round=11,
+Aggregate: accuracy=0.8790184717178344, round=11,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3151822090148926
+Train: loss=0.1908731758594513, round=12,
+Aggregate: accuracy=0.8633139843940735, round=12,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3229703903198242
+172.18.0.1 - - [29/Aug/2024 06:55:48] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:55:48] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.18426240980625153, round=13,
+Aggregate: accuracy=0.8915883913040161, round=13,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3243720531463623
+Train: loss=0.15030165016651154, round=14,
+Aggregate: accuracy=0.8845593671798706, round=14,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.3256092071533203
+172.18.0.1 - - [29/Aug/2024 06:55:53] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:55:53] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.1507282704114914, round=15,
+Aggregate: accuracy=0.8386437978744506, round=15,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.3244147300720215
+172.18.0.1 - - [29/Aug/2024 06:55:54] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.13125237822532654, round=16,
+Aggregate: accuracy=0.8826437983512878, round=16,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3218419551849365
+127.0.0.1 - - [29/Aug/2024 06:55:57] "GET /hi HTTP/1.1" 200 -
+Train: loss=0.111076220870018, round=17,
+Aggregate: accuracy=0.8794247999191284, round=17,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.3222079277038574
+Train: loss=0.09604761749505997, round=18,
+Aggregate: accuracy=0.8694881258010865, round=18,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.32153892517089844
+172.18.0.1 - - [29/Aug/2024 06:56:02] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:56:02] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.08249987661838531, round=19,
+Aggregate: accuracy=0.8999736127853394, round=19,
+gossip to n4
+172.18.0.1 - - [29/Aug/2024 06:56:04] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8004, cost=0.3217024803161621
+172.18.0.1 - - [29/Aug/2024 06:56:05] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.06873302906751633, round=20,
+Aggregate: accuracy=0.8763113431930541, round=20,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.3224058151245117
+Train: loss=0.08219689130783081, round=21,
+Aggregate: accuracy=0.8918891825675964, round=21,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3217134475708008
+Train: loss=0.09672508388757706, round=22,
+Aggregate: accuracy=0.875825858592987, round=22,
+gossip to n2
+172.18.0.1 - - [29/Aug/2024 06:56:13] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8002, cost=0.32213711738586426
+172.18.0.1 - - [29/Aug/2024 06:56:13] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.06701143085956573, round=23,
+Aggregate: accuracy=0.9024802083969117, round=23,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32399630546569824
+Train: loss=0.05421461910009384, round=24,
+Aggregate: accuracy=0.8646912908554077, round=24,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.3209977149963379
+172.18.0.1 - - [29/Aug/2024 06:56:19] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.048647116869688034, round=25,
+Aggregate: accuracy=0.884902373790741, round=25,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.32428455352783203
+172.18.0.1 - - [29/Aug/2024 06:56:24] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.03874528780579567, round=26,
+Aggregate: accuracy=0.8751556730270386, round=26,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.3142116069793701
+127.0.0.1 - - [29/Aug/2024 06:56:27] "GET /hi HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:56:27] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:56:28] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.05690229311585426, round=27,
+Aggregate: accuracy=0.8224591026306153, round=27,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.32488036155700684
+Train: loss=0.047356195747852325, round=28,
+Aggregate: accuracy=0.8988812675476074, round=28,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3239908218383789
+172.18.0.1 - - [29/Aug/2024 06:56:32] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:56:34] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.04551542177796364, round=29,
+Aggregate: accuracy=0.8267968339920044, round=29,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32172250747680664
+172.18.0.1 - - [29/Aug/2024 06:56:37] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.03575660660862923, round=30,
+172.18.0.1 - - [29/Aug/2024 06:56:38] "POST //gossip HTTP/1.1" 200 -
+Aggregate: accuracy=0.911113456249237, round=30,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32266664505004883
+172.18.0.1 - - [29/Aug/2024 06:56:39] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.046747028827667236, round=31,
+Aggregate: accuracy=0.8889234800338746, round=31,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32412219047546387
+172.18.0.1 - - [29/Aug/2024 06:56:41] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.043061915785074234, round=32,
+Aggregate: accuracy=0.8829445924758911, round=32,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32149839401245117
+172.18.0.1 - - [29/Aug/2024 06:56:43] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:56:44] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.018974605947732925, round=33,
+Aggregate: accuracy=0.9095356216430664, round=33,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.32146763801574707
+172.18.0.1 - - [29/Aug/2024 06:56:45] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.00801638513803482, round=34,
+Aggregate: accuracy=0.9037889170646668, round=34,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.3217353820800781
+Train: loss=0.01171234529465437, round=35,
+Aggregate: accuracy=0.9097678108215332, round=35,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.3221285343170166
+Train: loss=0.03707966208457947, round=36,
+Aggregate: accuracy=0.8829445924758911, round=36,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3231215476989746
+Train: loss=0.031963761895895004, round=37,
+Aggregate: accuracy=0.8831345624923707, round=37,
+gossip to p1
+172.18.0.1 - - [29/Aug/2024 06:56:56] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.3228621482849121
+127.0.0.1 - - [29/Aug/2024 06:56:57] "GET /hi HTTP/1.1" 200 -
+Train: loss=0.03021617978811264, round=38,
+Aggregate: accuracy=0.8992612161636353, round=38,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.3212716579437256
+172.18.0.1 - - [29/Aug/2024 06:57:01] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.011892551556229591, round=39,
+Aggregate: accuracy=0.9077255926132202, round=39,
+gossip to n4
+172.18.0.1 - - [29/Aug/2024 06:57:03] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8004, cost=0.32129430770874023
+Train: loss=0.0440833754837513, round=40,
+Aggregate: accuracy=0.884902373790741, round=40,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.328519344329834
+172.18.0.1 - - [29/Aug/2024 06:57:08] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0582420639693737, round=41,
+172.18.0.1 - - [29/Aug/2024 06:57:10] "POST //gossip HTTP/1.1" 200 -
+Aggregate: accuracy=0.8764591021537781, round=41,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.32268714904785156
+Train: loss=0.05835431441664696, round=42,
+Aggregate: accuracy=0.8786068601608277, round=42,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3229551315307617
+172.18.0.1 - - [29/Aug/2024 06:57:17] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.03619050979614258, round=43,
+Aggregate: accuracy=0.8931978869438172, round=43,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.312624454498291
+172.18.0.1 - - [29/Aug/2024 06:57:20] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:57:22] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.00624031713232398, round=44,
+Aggregate: accuracy=0.9178733515739441, round=44,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.32207298278808594
+172.18.0.1 - - [29/Aug/2024 06:57:23] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.006341672968119383, round=45,
+Aggregate: accuracy=0.929788917541504, round=45,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3227827548980713
+172.18.0.1 - - [29/Aug/2024 06:57:27] "POST //gossip HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2024 06:57:27] "GET /hi HTTP/1.1" 200 -
+Train: loss=0.0020267143845558167, round=46,
+Aggregate: accuracy=0.9258733515739441, round=46,
+gossip to p1
+172.18.0.1 - - [29/Aug/2024 06:57:28] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.3224184513092041
+Train: loss=0.022815285250544548, round=47,
+Aggregate: accuracy=0.897387864112854, round=47,
+gossip to p1
+172.18.0.1 - - [29/Aug/2024 06:57:31] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.3134939670562744
+172.18.0.1 - - [29/Aug/2024 06:57:32] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0759442001581192, round=48,
+Aggregate: accuracy=0.8541846952438354, round=48,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.32474684715270996
+Train: loss=0.05492299050092697, round=49,
+Aggregate: accuracy=0.8887757258415222, round=49,
+gossip to n3
+172.18.0.1 - - [29/Aug/2024 06:57:36] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8003, cost=0.3119654655456543
+Train: loss=0.030054662376642227, round=50,
+Aggregate: accuracy=0.8772189989089966, round=50,
+gossip to n4
+172.18.0.1 - - [29/Aug/2024 06:57:39] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8004, cost=0.32494378089904785
+Train: loss=0.0073371948674321175, round=51,
+Aggregate: accuracy=0.9077678098678589, round=51,
+gossip to n3
+172.18.0.1 - - [29/Aug/2024 06:57:42] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8003, cost=0.3230321407318115
+172.18.0.1 - - [29/Aug/2024 06:57:45] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0222582146525383, round=52,
+Aggregate: accuracy=0.8953034276962281, round=52,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.32271432876586914
+Train: loss=0.014207585714757442, round=53,
+Aggregate: accuracy=0.8915989446640015, round=53,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3224914073944092
+Train: loss=0.026161689311265945, round=54,
+Aggregate: accuracy=0.897282322883606, round=54,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3237881660461426
+172.18.0.1 - - [29/Aug/2024 06:57:51] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.014073312282562256, round=55,
+Aggregate: accuracy=0.9035778360366822, round=55,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3217506408691406
+127.0.0.1 - - [29/Aug/2024 06:57:57] "GET /hi HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:57:59] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.002331955824047327, round=56,
+Aggregate: accuracy=0.9118944578170777, round=56,
+gossip to p1
+172.18.0.1 - - [29/Aug/2024 06:58:01] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.322019100189209
+Train: loss=0.0019362507155165076, round=57,
+Aggregate: accuracy=0.9258733515739441, round=57,
+gossip to n2
+172.18.0.1 - - [29/Aug/2024 06:58:04] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8002, cost=0.3129889965057373
+172.18.0.1 - - [29/Aug/2024 06:58:04] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0005834799376316369, round=58,
+Aggregate: accuracy=0.9198944582939148, round=58,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32224559783935547
+172.18.0.1 - - [29/Aug/2024 06:58:07] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0006517903530038893, round=59,
+Aggregate: accuracy=0.9198733510971069, round=59,
+gossip to n2
+172.18.0.1 - - [29/Aug/2024 06:58:11] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8002, cost=0.32309889793395996
+172.18.0.1 - - [29/Aug/2024 06:58:12] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0024903318844735622, round=60,
+Aggregate: accuracy=0.9198311347961425, round=60,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.3133370876312256
+Train: loss=0.0163736492395401, round=61,
+Aggregate: accuracy=0.8957044858932495, round=61,
+gossip to n3
+172.18.0.1 - - [29/Aug/2024 06:58:15] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8003, cost=0.3214430809020996
+172.18.0.1 - - [29/Aug/2024 06:58:15] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.023725315928459167, round=62,
+Aggregate: accuracy=0.8634089708328248, round=62,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.32181692123413086
+172.18.0.1 - - [29/Aug/2024 06:58:18] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.05982561782002449, round=63,
+Aggregate: accuracy=0.8986068601608277, round=63,
+gossip to n2
+send weights to 222.201.187.51:8002, cost=0.3215980529785156
+Train: loss=0.05303042009472847, round=64,
+Aggregate: accuracy=0.8708390493392945, round=64,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3221259117126465
+172.18.0.1 - - [29/Aug/2024 06:58:23] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.005120578221976757, round=65,
+Aggregate: accuracy=0.9138311343193054, round=65,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.3257160186767578
+172.18.0.1 - - [29/Aug/2024 06:58:27] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:58:27] "POST //gossip HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2024 06:58:28] "GET /hi HTTP/1.1" 200 -
+Train: loss=0.0042017921805381775, round=66,
+Aggregate: accuracy=0.9098311343193054, round=66,
+gossip to n4
+172.18.0.1 - - [29/Aug/2024 06:58:29] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8004, cost=0.3220064640045166
+Train: loss=0.0019693963695317507, round=67,
+Aggregate: accuracy=0.9199155654907226, round=67,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3216361999511719
+Train: loss=0.01338335033506155, round=68,
+Aggregate: accuracy=0.861662269115448, round=68,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.32555270195007324
+Train: loss=0.0019502044888213277, round=69,
+Aggregate: accuracy=0.9258733515739441, round=69,
+gossip to p1
+send weights to 222.201.187.51:8005, cost=0.3247663974761963
+172.18.0.1 - - [29/Aug/2024 06:58:45] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.0006376124219968915, round=70,
+Aggregate: accuracy=0.9238944582939148, round=70,
+gossip to n4
+send weights to 222.201.187.51:8004, cost=0.3135206699371338
+172.18.0.1 - - [29/Aug/2024 06:58:51] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.001886110519990325, round=71,
+Aggregate: accuracy=0.9119155650138855, round=71,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32428646087646484
+172.18.0.1 - - [29/Aug/2024 06:58:54] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.020428428426384926, round=72,
+Aggregate: accuracy=0.9054089698791504, round=72,
+gossip to n3
+172.18.0.1 - - [29/Aug/2024 06:58:57] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8003, cost=0.3222670555114746
+172.18.0.1 - - [29/Aug/2024 06:58:57] "POST //gossip HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2024 06:58:58] "GET /hi HTTP/1.1" 200 -
+Train: loss=0.023063573986291885, round=73,
+Aggregate: accuracy=0.8812823209762574, round=73,
+gossip to p1
+172.18.0.1 - - [29/Aug/2024 06:59:00] "POST //gossip HTTP/1.1" 200 -
+send weights to 222.201.187.51:8005, cost=0.32230281829833984
+172.18.0.1 - - [29/Aug/2024 06:59:00] "POST //gossip HTTP/1.1" 200 -
+172.18.0.1 - - [29/Aug/2024 06:59:01] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.06991750001907349, round=74,
+Aggregate: accuracy=0.8704168848991394, round=74,
+gossip to n3
+send weights to 222.201.187.51:8003, cost=0.32253289222717285
+Train: loss=0.03765633702278137, round=75,
+Aggregate: accuracy=0.8790923490524292, round=75,
+Train: loss=0.03515822812914848, round=76,
+Aggregate: accuracy=0.8811134562492371, round=76,
+172.18.0.1 - - [29/Aug/2024 06:59:07] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.001613565138541162, round=77,
+Aggregate: accuracy=0.9218733510971069, round=77,
+Train: loss=0.0012534346897155046, round=78,
+Aggregate: accuracy=0.9138944578170777, round=78,
+172.18.0.1 - - [29/Aug/2024 06:59:14] "POST //gossip HTTP/1.1" 200 -
+Train: loss=0.021634399890899658, round=79,
+Aggregate: accuracy=0.9014089698791504, round=79,
+127.0.0.1 - - [29/Aug/2024 06:59:28] "GET /hi HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2024 06:59:58] "GET /hi HTTP/1.1" 200 -
+222.201.187.50 - - [29/Aug/2024 07:00:07] "GET //log HTTP/1.1" 200 -

@@ -1,0 +1,138 @@
+version: "2.1"
+volumes:
+  dml_app:
+    driver_opts:
+      type: "nfs"
+      o: "addr=222.201.187.50,ro"
+      device: ":/home/qianguo/controller/dml_app"
+  dataset:
+    driver_opts:
+      type: "nfs"
+      o: "addr=222.201.187.50,ro"
+      device: ":/home/qianguo/controller/dataset"
+services:
+  n1:
+    container_name: n1
+    image: dml:v1.0
+    working_dir: /home/qianguo/worker/dml_app
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    cpuset: 0-15
+    mem_limit: 2048M
+    environment:
+      - EDGE_TB_ID=1
+      - NET_NODE_NAME=n1
+      - DML_PORT=4444
+      - NET_CTL_ADDRESS=222.201.187.50:3333
+      - NET_AGENT_ADDRESS=222.201.187.51:3333
+    healthcheck:
+      test: curl -f http://localhost:4444/hi
+    ports:
+      - "8001:4444"
+    volumes:
+      - ./dml_file:/home/qianguo/worker/dml_file
+      - dml_app:/home/qianguo/worker/dml_app/:ro
+      - dataset:/home/qianguo/worker/dataset/:ro
+    command: python3 gl_peer.py
+  n2:
+    container_name: n2
+    image: dml:v1.0
+    working_dir: /home/qianguo/worker/dml_app
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    cpuset: 16-31
+    mem_limit: 2048M
+    environment:
+      - EDGE_TB_ID=2
+      - NET_NODE_NAME=n2
+      - DML_PORT=4444
+      - NET_CTL_ADDRESS=222.201.187.50:3333
+      - NET_AGENT_ADDRESS=222.201.187.51:3333
+    healthcheck:
+      test: curl -f http://localhost:4444/hi
+    ports:
+      - "8002:4444"
+    volumes:
+      - ./dml_file:/home/qianguo/worker/dml_file
+      - dml_app:/home/qianguo/worker/dml_app/:ro
+      - dataset:/home/qianguo/worker/dataset/:ro
+    command: python3 gl_peer.py
+  n3:
+    container_name: n3
+    image: dml:v1.0
+    working_dir: /home/qianguo/worker/dml_app
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    cpuset: 32-47
+    mem_limit: 2048M
+    environment:
+      - EDGE_TB_ID=3
+      - NET_NODE_NAME=n3
+      - DML_PORT=4444
+      - NET_CTL_ADDRESS=222.201.187.50:3333
+      - NET_AGENT_ADDRESS=222.201.187.51:3333
+    healthcheck:
+      test: curl -f http://localhost:4444/hi
+    ports:
+      - "8003:4444"
+    volumes:
+      - ./dml_file:/home/qianguo/worker/dml_file
+      - dml_app:/home/qianguo/worker/dml_app/:ro
+      - dataset:/home/qianguo/worker/dataset/:ro
+    command: python3 gl_peer.py
+  n4:
+    container_name: n4
+    image: dml:v1.0
+    working_dir: /home/qianguo/worker/dml_app
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    cpuset: 48-63
+    mem_limit: 2048M
+    environment:
+      - EDGE_TB_ID=4
+      - NET_NODE_NAME=n4
+      - DML_PORT=4444
+      - NET_CTL_ADDRESS=222.201.187.50:3333
+      - NET_AGENT_ADDRESS=222.201.187.51:3333
+    healthcheck:
+      test: curl -f http://localhost:4444/hi
+    ports:
+      - "8004:4444"
+    volumes:
+      - ./dml_file:/home/qianguo/worker/dml_file
+      - dml_app:/home/qianguo/worker/dml_app/:ro
+      - dataset:/home/qianguo/worker/dataset/:ro
+    command: python3 gl_peer.py
+  p1:
+    container_name: p1
+    image: dml:v1.0
+    working_dir: /home/qianguo/worker/dml_app
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    cpuset: 64-79
+    mem_limit: 2048M
+    environment:
+      - EDGE_TB_ID=5
+      - NET_NODE_NAME=p1
+      - DML_PORT=4444
+      - NET_CTL_ADDRESS=222.201.187.50:3333
+      - NET_AGENT_ADDRESS=222.201.187.51:3333
+    healthcheck:
+      test: curl -f http://localhost:4444/hi
+    ports:
+      - "8005:4444"
+    volumes:
+      - ./dml_file:/home/qianguo/worker/dml_file
+      - dml_app:/home/qianguo/worker/dml_app/:ro
+      - dataset:/home/qianguo/worker/dataset/:ro
+    command: python3 gl_peer.py

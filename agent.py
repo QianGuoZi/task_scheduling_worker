@@ -87,15 +87,15 @@ def deploy_emulated_tc(name: str, ret: Dict):
 
 def clear_old_tc(prefix: str, nic: str):
     # 清除旧的tc设置
-    time_start = time.time()
+    # time_start = time.time()
     cmd = prefix + ' tc qdisc show dev %s' % nic
     p = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.STDOUT, shell=True)
     msg = p.communicate()[0].decode()
     if "priomap" not in msg and "noqueue" not in msg:
         cmd = prefix + ' tc qdisc del dev %s root' % nic
         sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.STDOUT, shell=True).wait()
-    time_end = time.time()
-    print('delete time cost', time_end - time_start, 's')
+    # time_end = time.time()
+    # print('delete time cost', time_end - time_start, 's')
 
 
 def create_new_tc(prefix: str, nic: str, tc: Dict[str, str], tc_ip: Dict[str, str],

@@ -255,7 +255,7 @@ def route_emulated_node_stop():
 
 @app.route ('/emulated/build', methods=['POST'])
 def route_emulated_build ():
-	# 从controller层获取模拟器docker相关的信息，创建image
+	# 从controller层获取模拟器docker相关的信息ym文件，创建image
 	"""
 	listen file from controller/base/node.py, build_emulated_env ().
 	it will use these files to build a docker image.

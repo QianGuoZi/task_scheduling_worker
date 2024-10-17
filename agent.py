@@ -179,6 +179,7 @@ def route_emulator_info ():
 	hostname = request.args.get ('name')
 	return ''
 
+# def route_emulated_ovs ()：服务器接收controller的网络配置信息，然后进行组网
 
 @app.route ('/emulated/tc', methods=['POST'])
 def route_emulated_tc ():
